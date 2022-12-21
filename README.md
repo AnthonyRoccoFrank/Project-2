@@ -3,7 +3,7 @@
 ## Introduction
 The purpose of this ETL project was to analyze two datasets containing information about music artist and the use of profanity in their lyrics. In addition to these datasets, we also used web scraping techniques to gather information about the top 50 best selling albums of all time. The first dataset contained information about the artists' songs and lyrics, while the second dataset contained information about the artist genres and popularity score. By merging and analyzing these datasets, we were able to identify which genres had the highest use of profanity, which artists were the most popular based on search data, and which albums had the highest sales. The merged datasets were then stored in a MongoDB database. The resulting insights can provide valuable information for music industry professionals and researchers interested in understanding trends in language use, artist popularity, and album sales. 
 ## Data Sources
-The two datasets we used for the project are csv files that were obtained from Kaggle which were orginally sourced by scraping the Brazilian website [Vagalume](url). 
+The two datasets we used for the project are csv files that were obtained from Kaggle which were orginally sourced by scraping the Brazilian website [Vagalume](https://www.vagalume.com.br/). 
 * The lyrics-data.csv has five columns:
   * Alink: Link to the artist profile in Vagalume.com
   * SName: Song's Name
