@@ -15,7 +15,9 @@ The two datasets we used for the project are csv files that were obtained from K
   * Genres: Musical styles
   * Songs: Number of songs the arist has
   * Popularity: Popularity score based on how much each artist/lyric is accessed on the website
-  * Link: Link to the artist profile in Vagalume.com 
+  * Link: Link to the artist profile in Vagalume.com
+* The website [bestsellingalbums.org](https://bestsellingalbums.org/) was the resource that we scraped for the top 50 best selling albums of all time:
+  * The album's rank, title, artist, and number of sales were pulled from the html.
 ## ETL Process
 The following steps were taken to extract, transform, and load the data:
 
@@ -95,9 +97,23 @@ Here is a bar plot showing the top ten artists' combined album sales in the top 
 
 Two databases in MongoDB from the `combined_data` and the `profanity_vs_god` dataframes:
 
+<img width="1440" alt="Screenshot 2022-12-21 at 9 06 56 PM" src="https://user-images.githubusercontent.com/112406455/209046964-5686c66c-d9c8-4599-a148-9881585009c5.png">
 
+<img width="1440" alt="Screenshot 2022-12-21 at 9 06 44 PM" src="https://user-images.githubusercontent.com/112406455/209047000-26c41fca-a630-480d-8061-067b46fe25aa.png">
 
-## Usage
 ## Limitations and Future Work
+There was a restriction on the amount of data that was used to analyze the best selling albums of all 
+time from bestsellingalbums.org. Limitations of the code only allowed for the scrapping of one html page. 
+Due to this, only the top fifty albums were used in the analysis. Future fixes in the code could open 
+the possibility for a much larger analysis encompassing the entire website. Another limitation of the data was that the two csv files were sourced from a Brazilian website and it was primarly in Portuguese. 
+
 ## Conclusion
-## Additional Resources
+Based on the data that we observed we came to the following conclusions:
+* The genre with the highest use of profanity is Hip Hop followed by Rock which is no surprise. 
+* Surprisingly the genre with the highest use of the word God was Rock followed by Gospel.
+* There seems to be an inverse relationship between profanity and the use of the word God in each Genre.
+* Beyonce is extremely popular in Brazil. 
+* Of the top 50 best selling albums, Adele held the highest popularity score in Brazil
+* To no shock, Michael Jackson had the most albums in the top 50 best selling albums translating to the highest sales of any artist. 
+* 
+
