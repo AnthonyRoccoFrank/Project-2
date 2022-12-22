@@ -20,7 +20,7 @@ The two datasets we used for the project are csv files that were obtained from K
 The following steps were taken to extract, transform, and load the data:
 
 1. First we imported all dependencies
- <img width="1010" alt="Screenshot 2022-12-21 at 6 56 21 PM" src="https://user-images.githubusercontent.com/112406455/209032213-48471913-e086-4951-940c-c375d41baf8a.png">
+<img width="1013" alt="Screenshot 2022-12-21 at 8 41 38 PM" src="https://user-images.githubusercontent.com/112406455/209044104-6a7a5aa7-c3cb-4789-aed3-6a521e505dc8.png">
 
 2. The `artists` and `lyrics` data sets were read in from `.csv` files.
 <img width="1011" alt="Screenshot 2022-12-21 at 7 03 20 PM" src="https://user-images.githubusercontent.com/112406455/209032548-9cb86c1c-9a44-4d78-ba05-b18785117b87.png">
@@ -74,7 +74,29 @@ The following steps were taken to extract, transform, and load the data:
 18. Merge the original data set with the new data frame using the `pd.merge()` function, specifying the relevant columns or indices to join on.
 <img width="1009" alt="Screenshot 2022-12-21 at 8 37 17 PM" src="https://user-images.githubusercontent.com/112406455/209043133-2c17ff67-fc7e-4cd6-bab5-a585f4324eb6.png">
 
+19. Two databases were created in MongoDB from the `combined_data` and the `profanity_vs_god` dataframes:
+<img width="1263" alt="Screenshot 2022-12-21 at 8 46 41 PM" src="https://user-images.githubusercontent.com/112406455/209046043-a1da29ad-e702-4d1a-b1a0-9e5df160f340.png">
+
 ## Output
+Here is a bar plot of the profanity count in different genres:
+<img width="1011" alt="Screenshot 2022-12-21 at 8 45 25 PM" src="https://user-images.githubusercontent.com/112406455/209044762-479d37ff-961c-49c6-a611-b898812e0236.png">
+
+Here is a bar plot showcasing the amount of times `God` is used by each genre:
+<img width="1008" alt="Screenshot 2022-12-21 at 8 45 37 PM" src="https://user-images.githubusercontent.com/112406455/209044913-fa766fa7-f669-43b3-b25d-02ae54dfd257.png">
+
+Here is a double bar plot comparing the `profanity` count and `God` count for each genre:
+<img width="1009" alt="Screenshot 2022-12-21 at 8 45 44 PM" src="https://user-images.githubusercontent.com/112406455/209045118-57c9ed9d-0e6f-4aac-9417-24af03206a95.png">
+
+Here is a bar plot showing the top ten artist based on `popularity` count:
+<img width="1277" alt="Screenshot 2022-12-21 at 8 46 13 PM" src="https://user-images.githubusercontent.com/112406455/209045289-ef8aa8ef-407f-4ff0-9237-b3f9c95d54cf.png">
+
+Here is a bar plot showing the top ten artists' combined album sales in the top 50 best selling ablums:
+<img width="1276" alt="Screenshot 2022-12-21 at 8 46 33 PM" src="https://user-images.githubusercontent.com/112406455/209045565-97d69811-726b-42a3-a996-42c334555703.png">
+
+Two databases in MongoDB from the `combined_data` and the `profanity_vs_god` dataframes:
+
+
+
 ## Usage
 ## Limitations and Future Work
 ## Conclusion
