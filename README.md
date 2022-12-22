@@ -53,8 +53,27 @@ The following steps were taken to extract, transform, and load the data:
 11. A new data frame, `profanity_counts`, was created with the genre names and explicit word counts.
 <img width="1264" alt="Screenshot 2022-12-21 at 7 52 10 PM" src="https://user-images.githubusercontent.com/112406455/209037776-2e471ad1-7f6e-44cc-857b-81d8a85eeee0.png">
 
+12. Set up a `Browser` object using the `chrome` driver and `ChromeDriverManager`.
+<img width="1011" alt="Screenshot 2022-12-21 at 8 15 00 PM" src="https://user-images.githubusercontent.com/112406455/209040494-6519a2ec-7b3c-4617-973c-0f388af1a2c2.png">
 
- 
+13. Specify the URL of the web page to be scraped and send an HTTP request to the specified URL using the `visit()` method of the `Browser` object.
+<img width="1014" alt="Screenshot 2022-12-21 at 8 10 28 PM" src="https://user-images.githubusercontent.com/112406455/209040613-672af80c-2898-4c5e-9f29-5b81085b9f8d.png">
+
+14. Parse the HTML of the web page using `BeautifulSoup` and extract the desired data from the web page by finding all the `div`elements with the class `album_card` and using the `find()` method to extract the rank, title, artist, and sales data for each album. Clean and transform the data as needed, such as removing unnecessary characters from the sales data and converting it to an integer. Store the data in a dictionary and a list. Write the data to a `.csv` file using the `csv` library.
+<img width="1013" alt="Screenshot 2022-12-21 at 8 13 55 PM" src="https://user-images.githubusercontent.com/112406455/209041284-2a1e1b1e-84c9-4e66-a5c1-7bc44bc55107.png">
+
+15. Load in the csv file
+<img width="1012" alt="Screenshot 2022-12-21 at 8 27 49 PM" src="https://user-images.githubusercontent.com/112406455/209042111-dfc26b1b-14fa-4f22-8573-940503206000.png">
+
+16. Then capitalize the `Artist` column in the `new_df` dataframe using the `.str.upper()` method so it can be merged with the `bestsellers_df`
+<img width="1012" alt="Screenshot 2022-12-21 at 8 27 56 PM" src="https://user-images.githubusercontent.com/112406455/209042599-f04cb5b7-77b3-4eb9-bb84-4f4982226f68.png">
+
+17. Group the data by artist and sum the sales for each artist using the `groupby()` and `sum()` methods of the data frame, creating a new data frame.
+<img width="1009" alt="Screenshot 2022-12-21 at 8 35 17 PM" src="https://user-images.githubusercontent.com/112406455/209042970-54084a0c-3485-47f5-91bf-2a56ae0b853d.png">
+
+18. Merge the original data set with the new data frame using the `pd.merge()` function, specifying the relevant columns or indices to join on.
+<img width="1009" alt="Screenshot 2022-12-21 at 8 37 17 PM" src="https://user-images.githubusercontent.com/112406455/209043133-2c17ff67-fc7e-4cd6-bab5-a585f4324eb6.png">
+
 ## Output
 ## Usage
 ## Limitations and Future Work
