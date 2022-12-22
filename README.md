@@ -114,5 +114,5 @@ Based on the data that we observed we came to the following conclusions:
 * There seems to be an inverse relationship between profanity and the use of the word God in each Genre.
 * Beyonce is extremely popular in Brazil. 
 * Of the top 50 best selling albums, Adele held the highest popularity score in Brazil
-* To no shock, Michael Jackson had the most albums in the top 50 best selling albums translating to the highest sales of any artist. 
+* Michael Jackson had the most albums in the top 50 best selling albums translating to the highest sales of any artist. 
 
